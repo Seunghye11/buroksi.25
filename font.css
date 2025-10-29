@@ -1,0 +1,189 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css")
+        format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 900;
+    src: url("https://use.typekit.net/ugi5uji.css") format("woff2");
+    unicode-range: U+0000-007F;
+    font-style: normal;
+}
+
+.color_g{color: #47ac49;}
+
+/*섹션1*/
+.main_txt {
+    width: 100vw;
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    text-align: left;
+    font-size: 7.3vw;
+    font-weight: 900;
+    line-height: 0.8;
+    white-space: pre-line; /* <br>만 줄바꿈으로 인식 */
+    z-index: 3;
+}
+
+.footer_section {
+    position: absolute; /* 화면 기준으로 고정 */
+    right: 0; /* 오른쪽 끝 */
+    bottom: 0; /* 하단 끝 */
+    margin: 10px; /* 화면 끝에서 약간 띄움 */
+}
+
+.bottom_txt {
+    font-size: 1.7vw;
+    font-weight: 900;
+    line-height: 2rem;
+    white-space: pre-line; /* <br> 줄바꿈 적용 */
+    word-break: keep-all; /* 단어 단위 줄바꿈 방지 */
+    color: #47ac49;
+    text-align: end;
+}
+
+/*섹션2*/
+.menu_txt {
+    font-size: 4rem;
+    line-height: 1.2em;
+    margin: 10px 10px 0px 10px;
+    font-weight: 900;
+}
+
+.menu_txt:hover {
+    color: #47ac49;
+}
+
+.middle_txt {
+    font-size: 3em;
+    line-height: 1.2em;
+    font-weight: 900;
+    margin: 10px 10px 0px 10px;
+    display: none;
+}
+
+.middle_txt.th1 {
+    display: block;
+}
+
+/* 활성 메뉴 색상 */
+.menu_txt.active {
+    color: #47ac49; /* 원하는 색상 */
+    font-weight: 900;
+}
+
+/*섹션3*/
+.title_pk {
+    font-size: 4em;
+    line-height: 1.2em;
+    margin: 10px 10px 0px 10px;
+    font-weight: 900;
+    color: #f0cbdc;
+}
+
+.title_pe {
+    position: absolute;
+    right: 0;
+    font-size: 3.5em;
+    line-height: 1.2em;
+    margin: 10px 10px 0px 10px;
+    font-weight: 800;
+    color: #f0cbdc;
+    font-style: italic;
+}
+
+.ps1 {
+    position: absolute; /* 화면 또는 부모 섹션 기준 절대 위치 */
+    bottom: 0;
+    margin: 10px;
+    column-count: 4;
+    column-gap: 100px;
+    color: #f0cbdc;
+    font-size: 2.2em;
+    font-weight: 800;
+    line-height: 1.5em;
+    width: 100vw;
+    justify-content: end;
+}
+
+.ps1 p {
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* hover 시 */
+.ps1 p:hover {
+    color: #47ac49; /* 초록색으로 변경 */
+    transform: scale(1.05);
+}
+
+/* active (클릭 순간) */
+.ps1 p:active {
+    color: #febcdb; /* 핑크색으로 변경 */
+    transform: scale(0.95);
+}
+
+/*섹션4*/
+.title_gk {
+    font-size: 4em;
+    line-height: 1.2em;
+    margin: 10px 10px 0px 10px;
+    font-weight: 900;
+    color: #47ac49;
+}
+
+.title_ge {
+    position: absolute;
+    right: 0;
+    font-size: 3.5em;
+    line-height: 1.2em;
+    margin: 10px 10px 0px 10px;
+    font-weight: 800;
+    color: #47ac49;
+    font-style: italic;
+}
+
+.ps2 {
+    position: absolute; /* 화면 또는 부모 섹션 기준 절대 위치 */
+    bottom: 0;
+    margin: 10px;
+    column-count: 2;
+    column-gap: 100px;
+    color: #47ac49;
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1.5em;
+    width: 100vw;
+    justify-content: end;
+}
+
+/*섹션5*/
+.ps3 {
+    position: relative; /* 화면 또는 부모 섹션 기준 절대 위치 */
+    margin: 10px;
+    column-count: 3;
+    column-gap: 300px;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1em;
+    width: 80vw;
+    z-index: 5;
+}
+
+.c_txt{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-style: italic;
+    color: #f0cbdc;
+    font-size: 1.5em;
+    font-weight: 900;
+}

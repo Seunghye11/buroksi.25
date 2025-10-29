@@ -1,0 +1,64 @@
+/*모달창*/
+.modal {
+    display: none; /* 초기 숨김 */
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: auto;
+    z-index: 1000;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: #f0cbdc;
+    padding: 20px;
+}
+
+.modal-body{
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2.5em;
+    cursor: pointer;
+    color:  #47ac49;
+    font-weight: 800;
+}
+
+.modal-img {
+    width: 110%;
+    margin: 0;
+    display: block;
+}
+
+.modal-title {
+    font-size: 1.7em;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #47ac49;
+    font-weight: 900;
+    width: 100vw;
+    margin-left: 3%;
+}
+
+.modal-desc {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+    flex-direction: column;
+    color: #47ac49;
+    font-weight: 700;
+    margin-left: 3%;
+}
